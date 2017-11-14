@@ -79,12 +79,15 @@
 	"publishConfig": {
 		"tag": "dev"
 	},
+	"peerDependencies": {
+		"@brikcss/stylelint-config-css": "0.x",
+		"stylelint": "8.x",
+		"stylelint-scss": "2.x"
+	},
 	"dependencies": {
-		"@brikcss/stylelint-config-css": "0.0.1",
-		"stylelint": "8.2.0",
-		"stylelint-config-recommended": "1.0.0",
-		"stylelint-formatter-pretty": "1.0.3",
-		"stylelint-scss": "2.1.0"
+		"@brikcss/stylelint-config-css": "0.x",
+		"stylelint": "8.x",
+		"stylelint-scss": "2.x"
 	},
 	"devDependencies": {
 		"@brikcss/eslint-config-brikcss": "0.1.0",
