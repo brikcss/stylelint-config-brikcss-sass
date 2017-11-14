@@ -1,7 +1,7 @@
 {
 	"name": "@brikcss/stylelint-config-sass",
 	"version": "0.0.0-development",
-	"description": "stylelint shareable configuration by brikcss.",
+	"description": "SASS stylelint shareable configuration by brikcss.",
 	"author": "The Zimmee <thezimmee@gmail.com>",
 	"license": "MIT",
 	"homepage": "https://github.com/brikcss/stylelint-config-sass",
@@ -81,6 +81,7 @@
 	},
 	"devDependencies": {
 		"@brikcss/eslint-config-brikcss": "0.1.0",
+		"@brikcss/stylelint-config-css": "0.0.1",
 		"@commitlint/cli": "^4.2.2",
 		"@commitlint/prompt": "^4.2.2",
 		"autoprefixer": "^7.1.4",

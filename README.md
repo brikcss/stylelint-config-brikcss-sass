@@ -17,4 +17,11 @@ npm install --save-dev @brikcss/stylelint-config-sass
 
 ## Usage
 
-For documentation, see [stylelint configuration](https://stylelint.io/user-guide/configuration/). Specifically note the [section on extending configs](https://stylelint.io/user-guide/configuration/#extends).
+```js
+// stylelint.config.js
+module.exports = {
+	extends: ['stylelint-config-recommended']
+};
+```
+
+For further documentation, see [stylelint configuration](https://stylelint.io/user-guide/configuration/). Specifically note the [section on extending configs](https://stylelint.io/user-guide/configuration/#extends).
