@@ -41,7 +41,7 @@
 		"watch": "concurrently --raw \"npm run js:watch\" \"npm run sass:watch\"",
 		"// [TESTS]": "UI and unit tests, as well as code quality checkers.",
 		"pretest": "echo \"Running tests...\n\"",
-		"test": "cross-env NODE_ENV=production concurrently --kill-others-on-fail --names=sass:lint,js:lint \"npm run sass:lint:valid\" \"npm run js:lint\" || npm run test:fail",
+		"test": "npm prune && npm install && cross-env NODE_ENV=production concurrently --kill-others-on-fail --names=sass:lint,js:lint \"npm run sass:lint:valid\" \"npm run js:lint\" || npm run test:fail",
 		"posttest": "echo \"\n[ok] Tests complete.\n\"",
 		"test:fail": "echo \"\n[FAIL] Tests failed.\n\" && exit 1",
 		"// [JS]": "// Lint JS files.",
@@ -82,11 +82,15 @@
 	"peerDependencies": {
 		"@brikcss/stylelint-config-css": "0.x",
 		"stylelint": "8.x",
+		"stylelint-config-recommended": "1.x",
+		"stylelint-formatter-pretty": "1.x",
 		"stylelint-scss": "2.x"
 	},
 	"dependencies": {
 		"@brikcss/stylelint-config-css": "0.x",
 		"stylelint": "8.x",
+		"stylelint-config-recommended": "1.x",
+		"stylelint-formatter-pretty": "1.x",
 		"stylelint-scss": "2.x"
 	},
 	"devDependencies": {
