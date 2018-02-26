@@ -31,7 +31,10 @@ module.exports = {
 		],
 		indentation: null,
 		'function-comma-space-after': null,
+		'function-comma-newline-after': null,
 		'function-parentheses-newline-inside': null,
+		'function-parentheses-space-inside': null,
+		'declaration-bang-space-before': null,
 
 		/** SASS RULES (stylelint-scss). */
 		'scss/at-else-if-parentheses-space-before': 'always',
