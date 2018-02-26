@@ -8,7 +8,7 @@
  */
 
 /* eslint-env node */
-var isProd = process.env.NODE_ENV === 'prod' || process.env.NODE_ENV === 'production';
+var isDev = process.env.NODE_ENV === 'dev';
 module.exports = {
 	extends: [
 		// `stylelint-config-recommended` turns on all rules that can cause errors in CSS.
@@ -19,7 +19,7 @@ module.exports = {
 	formatter: 'stylelint-formatter-pretty',
 	processors: [],
 	ignoreFiles: [],
-	defaultSeverity: isProd ? 'error' : 'warning',
+	defaultSeverity: isDev ? 'warning' : 'error',
 	rules: {
 		/** OVERWRITE EXISTING stylelint-config-css CSS RULES. */
 		'max-nesting-depth': [
